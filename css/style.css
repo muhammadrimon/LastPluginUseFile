@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.h50 {
+  height: 50px;
+}
+
+/* common css ends */
+
+#navbar {
+  height: 100px;
+  background: #ddd;
+}
+
+/* navbar css ends */
+
+#banner {
+  height: 500px;
+  position: relative;
+  z-index: 1;
+  background: transparent;
+}
+
+#banner::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+#banner .banner {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#banner .banner h4 {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #fff;
+}
+
+/* banner css ends */
+
+#about {
+  height: 400px;
+  background: #ddd;
+  margin-top: 50px;
+}
+
+#about .about {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#about .about .image {
+  width: 300px;
+  height: 100%;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
+}
+
+#about .about .image img {
+  width: 100%;
+}
+
+#about .about .text {
+  width: 800px;
+  height: 100%;
+}
+
+#about .about .text h3 {
+  text-transform: uppercase;
+  font-size: 36px;
+  color: #3a3838;
+}
+
+#about .about .text h4 {
+  text-transform: capitalize;
+  font-size: 24px;
+  color: #151414;
+  margin-top: 30px;
+}
+
+#about .about .text p {
+  font-size: 20px;
+  color: #2b2929;
+  margin-top: 30px;
+  padding-right: 80px;
+  text-align: justify;
+}
+
+#about .about .text span {
+  font-size: 24px;
+  color: #f73f1f;
+  text-transform: uppercase;
+}
+
+/* about css ends */
+
+#timer {
+  height: 300px;
+  background: linear-gradient(-45deg, #60a6f0, #d1f060);
+  margin-bottom: 50px;
+}
+
+#timer .timer {
+  height: 100%;
+}
+
+#timer .timer #countdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+#timer .timer #countdown .wrapper {
+  width: 150px;
+  height: 150px;
+  border: 5px solid #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+#timer .timer #countdown .wrapper .time {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+#timer .timer #countdown .wrapper .label {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* timer css ends */
