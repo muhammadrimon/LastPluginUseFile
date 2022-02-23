@@ -25,4 +25,10 @@ $(document).ready(function () {
 
     second: 0, // 0-59
   });
+
+  // vdo background ;
+  $("#bgndVideo").YTPlayer({
+    showControls: false,
+    loop: true,
+  });
 });
